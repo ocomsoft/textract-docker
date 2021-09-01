@@ -10,5 +10,6 @@ WORKDIR /workdir
 COPY app /workdir/
 
 EXPOSE $PORT
+ENV PORT=$PORT
 
 ENTRYPOINT ["python", "-u", "server.py", "serve"]
